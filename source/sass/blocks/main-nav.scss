@@ -1,0 +1,36 @@
+.main-nav {
+  background: $contrast-text-color;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $main-text-color;
+
+  &:focus {
+    outline: none;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+    opacity: 0.6;
+  }
+
+  &--current:hover {
+    text-decoration: none;
+  }
+}

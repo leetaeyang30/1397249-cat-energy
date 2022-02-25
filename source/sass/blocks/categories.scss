@@ -1,0 +1,34 @@
+.categories__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.categories__item {
+  background: $accent-bg;
+}
+
+.categories__title {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+
+.categories__link {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $main-text-color;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
