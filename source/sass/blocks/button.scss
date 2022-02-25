@@ -1,0 +1,22 @@
+.button {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $contrast-text-color;
+  background: $main-color;
+
+  &:focus-within {
+    outline: none;
+    background: $main-color-focus;
+  }
+
+  &:hover {
+    background: $main-color-hover;
+  }
+
+  &:active {
+    color: $contrast-text-color-30;
+  }
+}

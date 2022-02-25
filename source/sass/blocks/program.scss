@@ -1,0 +1,19 @@
+.program {
+  background: linear-gradient(to bottom, $main-color-85 0%, $main-color-85 302px, $contrast-text-color 302px, $contrast-text-color 100%), url("../../img/bg-image.jpg") no-repeat top center;
+}
+
+.program__title {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $contrast-text-color;
+}
+
+.program__slogan {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $contrast-text-color;
+}

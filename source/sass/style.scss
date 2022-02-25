@@ -1,9 +1,19 @@
 // Global
 
-@import url("global/variables.scss");
-@import url("global/global.scss");
-@import url("global/fonts.scss");
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
 
 // Blocks
 
-@import url("blocks/header.scss");
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/program.scss";
+@import "blocks/button.scss";
+@import "blocks/categories.scss";
+@import "blocks/features.scss";
+@import "blocks/demo.scss";
+@import "blocks/title.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials.scss";
