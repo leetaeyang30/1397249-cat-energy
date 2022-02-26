@@ -1,0 +1,11 @@
+.bonus {
+  min-height: 289px;
+  background: linear-gradient(to bottom, $main-color-85 0%, $main-color-85 302px, $contrast-text-color 302px, $contrast-text-color 100%), url("../../img/bonus-bg.jpg") no-repeat top center;
+}
+
+.bonus__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $contrast-text-color;
+}
