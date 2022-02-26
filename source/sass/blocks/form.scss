@@ -1,0 +1,43 @@
+.program__subtitle {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+
+.form {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.field {
+  border: none;
+}
+
+.form__text-input {
+  &::placeholder {
+    font-family: "Oswald", "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.field__title {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+
+.form__note {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  color: $main-text-color;
+}

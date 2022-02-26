@@ -6,6 +6,7 @@
   text-transform: uppercase;
   color: $contrast-text-color;
   background: $main-color;
+  border: none;
 
   &:focus-within {
     outline: none;
