@@ -1,5 +1,10 @@
 .demo {
   background: $accent-bg;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .demo__numbers {
@@ -17,12 +22,36 @@
   text-transform: lowercase;
 }
 
+.demo__data {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.demo__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
 .demo__subtitle {
   font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   color: $main-text-color;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2/3;
+  }
 }
 
 .demo__price {
