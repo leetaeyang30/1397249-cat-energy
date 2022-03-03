@@ -1,5 +1,15 @@
+.footer {
+  position: relative;
+}
+
 .footer__announcement {
-  background: $accent-bg;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background: $contrast-text-color;
+  }
 }
 
 .footer__subtitle {
@@ -15,19 +25,13 @@
   line-height: 20px;
 }
 
-.footer__logo[href] {
-  &:focus {
-    outline: none;
-    opacity: 0.6;
-  }
+.footer__info {
+  background: $accent-bg;
+}
 
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__copyright {
