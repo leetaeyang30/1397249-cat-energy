@@ -2,22 +2,18 @@
   list-style: none;
 }
 
-.footer__socials-link:hover {
-  .footer__socials-link--icon {
+.socials__link:hover {
+  .socials__icon {
     fill: $main-color;
-  }
-
-  .footer__socials-link--icon-fb {
-    stroke: $main-color;
   }
 }
 
-.footer__socials-link:active {
-  .footer__socials-link--icon {
+.socials__link:active {
+  .socials__icon {
     opacity: 0.3;
   }
 
-  .footer__socials-link--icon-fb {
+  .socials__icon {
     opacity: 0.3;
   }
 }

@@ -27,26 +27,49 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $main-text-color;
+}
 
+.main-nav__link[href] {
   &:focus {
     outline: none;
-    text-decoration: underline;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-
-  &:active {
-    text-decoration: none;
     opacity: 0.6;
   }
 
-  &--current:hover {
-    text-decoration: none;
+  &:hover {
+    opacity: 0.6;
   }
 
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--main .main-nav__link {
   @media (min-width: $desktop-width) {
     color: $contrast-text-color;
   }
+}
+
+@media (min-width: $tablet-width) {
+.main-nav__link--current {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 5px;
+    left: 0;
+    height: 2px;
+    background-color: $main-color;
+  }
+}
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav--main .main-nav__link--current {
+    &::after {
+      background-color: $contrast-text-color;
+    }
+}
 }

@@ -1,19 +1,17 @@
-.program__subtitle {
-  font-family: "Oswald", "Helvetica", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $main-text-color;
-}
-
 .form {
   font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field {
+  padding: 0;
   border: none;
 }
 
@@ -24,6 +22,11 @@
     line-height: 18px;
     text-transform: uppercase;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field__title {
@@ -32,6 +35,44 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $main-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.field__text {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+.form__columns {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.form__wrapper--radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__wrapper--checkbox {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .form__note {
@@ -40,4 +81,8 @@
   line-height: 16px;
   text-transform: none;
   color: $main-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
