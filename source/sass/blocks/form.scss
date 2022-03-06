@@ -55,6 +55,13 @@
   }
 }
 
+.form__wrapper--contacts {
+  @media (min-width: $dekstop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .form__wrapper--radio {
   display: flex;
   flex-direction: column;
