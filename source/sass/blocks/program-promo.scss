@@ -15,7 +15,9 @@
   right: 0;
   height: 302px;
   z-index: -1;
-  background: linear-gradient(to bottom, $main-color-85 0%, $main-color-85 302px, $contrast-text-color 302px, $contrast-text-color 100%), url("../../img/promo-bg.jpg") no-repeat center;
+  background-image: linear-gradient(to bottom, $main-color-85 0%, $main-color-85 302px, $contrast-text-color 302px, $contrast-text-color 100%), url("../../img/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
@@ -28,7 +30,9 @@
     right: 0;
     left: 50%;
     height: 696px;
-    background: linear-gradient(to bottom, $main-color-85 0%, $main-color-85 100%), url("../../img/promo-bg-desk.jpg") no-repeat center;
+    background-image: linear-gradient(to bottom, $main-color-85 0%, $main-color-85 100%), url("../../img/promo-bg-desk.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

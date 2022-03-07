@@ -1,5 +1,5 @@
 .demo {
-  background: $accent-bg;
+  background-color: $accent-bg;
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -73,7 +73,7 @@
   color: $main-text-color;
   border: none;
   border-bottom: 1px dotted $main-text-color-24;
-  background: transparent;
+  background-color: transparent;
 
   &:focus {
     outline: none;

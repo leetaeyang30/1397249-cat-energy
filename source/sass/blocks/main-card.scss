@@ -1,3 +1,13 @@
+.main-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, $accent-bg 0%, $accent-bg 84%, $contrast-text-color 84%, $contrast-text-color 100%);
+  }
+}
+
 .main-card__title-link {
   font-family: "Oswald", "Helvetica", sans-serif;
   font-weight: normal;
@@ -5,6 +15,11 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $main-text-color;
+}
+
+.main-card__image-link {
+  display: block;
+  order: -1;
 }
 
 .main-card__info {

@@ -6,16 +6,16 @@
   text-transform: uppercase;
   text-align: center;
   color: $contrast-text-color;
-  background: $main-color;
+  background-color: $main-color;
   border: none;
 
   &:focus-within {
     outline: none;
-    background: $main-color-focus;
+    background-color: $main-color-focus;
   }
 
   &:hover {
-    background: $main-color-hover;
+    background-color: $main-color-hover;
   }
 
   &:active {
