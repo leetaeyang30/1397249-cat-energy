@@ -1,3 +1,17 @@
+.sub-catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sub-catalog__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+  }
+}
+
 .sub-catalog__title {
   font-family: "Oswald", "Helvetica", sans-serif;
   font-weight: normal;
@@ -5,8 +19,4 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $main-text-color;
-}
-
-.sub-catalog__list {
-  list-style: none;
 }

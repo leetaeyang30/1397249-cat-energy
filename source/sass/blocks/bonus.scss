@@ -1,6 +1,19 @@
 .bonus {
-  min-height: 289px;
-  background: linear-gradient(to bottom, $main-color-85 0%, $main-color-85 302px, $contrast-text-color 302px, $contrast-text-color 100%), url("../../img/bonus-bg.jpg") no-repeat top center;
+  height: 289px;
+  background-image: linear-gradient(to bottom, $main-color-85 0%, $main-color-85 100%), url("../../img/bonus-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 289px;
+    background-position: center;
+  }
 }
 
 .bonus__text {

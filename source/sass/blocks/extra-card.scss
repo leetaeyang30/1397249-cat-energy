@@ -1,4 +1,14 @@
-.mini-card__title {
+.extra-card {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.extra-card__title {
   font-family: "Oswald", "Helvetica", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -7,12 +17,12 @@
   color: $main-text-color;
 }
 
-.mini-card__info {
+.extra-card__info {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
 }
 
-.mini-card__price {
+.extra-card__price {
   margin: 0;
 }
