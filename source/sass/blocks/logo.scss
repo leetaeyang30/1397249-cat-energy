@@ -1,11 +1,5 @@
 .logo {
-  @media (min-width: $tablet-width) {
-    height: 52px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 52px;
-  }
+  display: block;
 }
 
 .logo[href] {
@@ -20,5 +14,20 @@
 
   &:active {
     opacity: 0.5;
+  }
+}
+
+.logo__image {
+  width: 191px;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 174px;
+    height: 52px;
   }
 }

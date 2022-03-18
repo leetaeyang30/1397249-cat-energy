@@ -2,6 +2,14 @@
   list-style: none;
 }
 
+.socials__item:first-child {
+  margin-right: 36px;
+}
+
+.socials__item:nth-child(2) {
+  margin-right: 33px;
+}
+
 .socials__link:hover {
   .socials__icon {
     fill: $main-color;
