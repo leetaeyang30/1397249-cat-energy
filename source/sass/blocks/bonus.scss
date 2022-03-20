@@ -1,6 +1,6 @@
 .bonus {
   height: 289px;
-  background-image: linear-gradient(to bottom, $main-color-85 0%, $main-color-85 100%), url("../../img/bonus-bg.jpg");
+  background-image: linear-gradient(to bottom, fade-out($main-color, 0.15) 0%, fade-out($main-color, 0.15) 100%), url("../../img/bonus-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -1,4 +1,6 @@
 .button {
+  display: inline-block;
+  padding: 12px 10px 10px;
   font-family: "Oswald", "Helvetica", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -20,5 +22,11 @@
 
   &:active {
     color: $contrast-text-color-30;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 10px 17px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

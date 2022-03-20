@@ -12,18 +12,178 @@
 
 .categories__item {
   background-color: $accent-bg;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    padding-top: 70px;
+    padding-left: 53px;
+    padding-right: 20px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-top: 41px;
+    padding-left: 52px;
+    padding-right: 51px;
+    padding-bottom: 55px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .categories__item::after {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .categories__item--slim::after {
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 211px;
+    margin-right: 42px;
+    background-image: url("../../img/lose-weight.png");
+  }
+
+  .categories__item--pro::after {
+    top: 0;
+    right: 0;
+    width: 268px;
+    height: 200px;
+    margin-right: 8px;
+    background-image: url("../../img/gain-weight.png");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__item::after {
+    display: none;
+  }
 }
 
 .categories__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
   font-family: "Oswald", "Helvetica", sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: $main-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
+}
+
+.categories__item--slim .categories__title::before {
+  content: "";
+  width: 50px;
+  height: 53px;
+  margin-right: 19px;
+  background-image: url("../../img/lose-weight.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.categories__item--pro .categories__title::before {
+  content: "";
+  width: 67px;
+  height: 50px;
+  margin-right: 11px;
+  margin-left: -9px;
+  background-image: url("../../img/gain-weight.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (min-width: $tablet-width) {
+  .categories__item--slim .categories__title::before {
+    display: none;
+  }
+
+  .categories__item--pro .categories__title::before {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__item--slim .categories__title::before {
+    display: block;
+    width: 100px;
+    height: 106px;
+    margin-right: 62px;
+  }
+
+  .categories__item--pro .categories__title::before {
+    display: block;
+    width: 134px;
+    height: 100px;
+    margin-right: 47px;
+  }
+}
+
+.categories__text {
+  position: relative;
+  margin: 0;
+  margin-bottom: 38px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -23px;
+    width: 100%;
+    height: 2px;
+    background-color: $nav-border-color;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $main-text-color;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 23px;
+  }
 }
 
 .categories__link {
+  display: flex;
+  align-items: center;
   font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -36,5 +196,27 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 12px;
+    margin-left: 17px;
+    background-image: url("../img/arrow.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.categories__link:hover,
+.categories__link:focus {
+  &::after {
+    transform: scaleX(1.2);
+    transform-origin: left center;
+    animation-duration: 100ms;
   }
 }
