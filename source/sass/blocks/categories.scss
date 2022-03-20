@@ -1,18 +1,12 @@
 .categories__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
   list-style: none;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
-  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
-    margin-bottom: 71px;
   }
 }
 
@@ -157,7 +151,7 @@
 .categories__text {
   position: relative;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 38px;
 
   &::after {
     position: absolute;
@@ -190,7 +184,6 @@
 .categories__link {
   display: flex;
   align-items: center;
-  padding-top: 15px;
   font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 16px;
