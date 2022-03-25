@@ -1,0 +1,66 @@
+.text-field {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.text-field__name {
+  display: block;
+  margin-right: 15px;
+}
+
+.text-field__input {
+  width: 100%;
+  padding: 12px 15px 13px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
+  outline: $input-border-color solid 1px;
+  border: 0;
+
+  &:focus-within {
+    outline: $main-text-color solid 1px;
+  }
+
+  &:hover {
+    outline: $demo-border-color solid 1px;
+  }
+
+  &:invalid:focus-within {
+    outline: $error-color solid 1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+  }
+
+  &::placeholder {
+    font-family: "Oswald", "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.text-field__input--email,
+.text-field__input--phone {
+  padding-top: 15px;
+  padding-right: 43px;
+}
+
+.text-field__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}

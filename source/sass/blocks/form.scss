@@ -77,60 +77,6 @@
   }
 }
 
-.text-field {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  align-items: center;
-  margin-bottom: 14px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
-  }
-}
-
-.text-field__name {
-  display: block;
-  margin-right: 15px;
-}
-
-.text-field__input {
-  width: 100%;
-  padding: 12px 15px 13px;
-  box-sizing: border-box;
-  font-size: 16px;
-  line-height: 18px;
-  outline: $input-border-color solid 1px;
-  border: 0;
-
-  &:focus-within {
-    outline: $main-text-color solid 1px;
-  }
-
-  &:hover {
-    outline: $demo-border-color solid 1px;
-  }
-
-  &:invalid:focus-within {
-    outline: $error-color solid 1px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 11px 20px;
-  }
-
-  &::placeholder {
-    font-family: "Oswald", "Helvetica", sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
-    }
-  }
-}
-
 .form__wrapper--radio {
   padding-top: 19px;
 
@@ -143,65 +89,6 @@
     display: flex;
     flex-direction: column;
   }
-}
-
-.radio-field {
-  display: block;
-  margin-bottom: 19px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 13px;
-  }
-}
-
-.radio-field__name {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.radio-field__name::before {
-  content: "";
-  top: 0;
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
-  border: 1px solid $demo-border-color;
-  border-radius: 50%;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.radio-field__input:checked + .radio-field__name::after {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 8px;
-  border-radius: 50%;
-  background-color: $main-color;
-
-  @media (min-width: $tablet-width) {
-    left: 11px;
-    width: 18px;
-    height: 18px;
-  }
-}
-
-.radio-field__input:disabled + .radio-field__name {
-  opacity: 0.3;
-}
-
-.radio-field__input:focus-visible + .radio-field__name::before {
-  border: 1px solid $main-text-color;
-}
-
-.radio-field__input:hover + .radio-field__name::before {
-  border: 1px solid $input-hover-color;
 }
 
 .form__item--cat-info {
@@ -276,12 +163,6 @@
   }
 }
 
-.text-field__input--email,
-.text-field__input--phone {
-  padding-top: 15px;
-  padding-right: 43px;
-}
-
 .form__label--email,
 .form__label--phone {
   position: relative;
@@ -289,13 +170,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
-}
-
-.text-field__icon {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
 }
 
 .form__wrapper--contacts {
@@ -347,33 +221,12 @@
 }
 
 .form__wrapper--comment {
+  @media (min-width: $tablet-width) {
   padding: 0 37px 0 41px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-  }
-}
-
-.textarea__input {
-  width: 100%;
-  min-height: 151px;
-  padding: 9px 12px 9px 15px;
-  border: 1px solid $input-border-color;
-  box-sizing: border-box;
-
-  &::placeholder {
-    font-family: "Oswald", "Helvetica", sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: $side-text-color;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::placeholder {
-      font-size: 20px;
-      line-height: 30px;
-    }
   }
 }
 
@@ -411,60 +264,6 @@
     column-gap: 80px;
     padding: 0;
   }
-}
-
-.checkbox {
-  display: block;
-  margin-bottom: 13px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  }
-}
-
-.checkbox__name {
-  position: relative;
-  display: flex;
-  align-items: center;
-
-  &::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    margin-right: 16px;
-    border: 1px solid $demo-border-color;
-    box-sizing: border-box;
-
-    @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
-      margin-right: 19px;
-    }
-  }
-}
-
-.checkbox__input:checked + .checkbox__name::after {
-  position: absolute;
-  content: "";
-  left: 6px;
-  width: 18px;
-  height: 14px;
-  background-image: url("../../img/tick.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: $tablet-width) {
-    width: 26px;
-    height: 26px;
-  }
-}
-
-.checkbox__input:disabled + .checkbox__name {
-  opacity: 0.3;
 }
 
 .form__submit {

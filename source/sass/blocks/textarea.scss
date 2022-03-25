@@ -1,0 +1,22 @@
+.textarea__input {
+  width: 100%;
+  min-height: 151px;
+  padding: 9px 12px 9px 15px;
+  border: 1px solid $input-border-color;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-family: "Oswald", "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $side-text-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
