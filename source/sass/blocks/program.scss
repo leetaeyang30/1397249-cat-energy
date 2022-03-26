@@ -5,10 +5,29 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $main-text-color;
+  margin: 0;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     width: 323px;
     font-size: 20px;
     line-height: 30px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 66px 0;
+  }
+}
+
+.program__form {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
   }
 }

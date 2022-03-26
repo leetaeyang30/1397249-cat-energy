@@ -1,3 +1,26 @@
+.main__title {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $main-text-color;
+  margin: 0;
+  margin-bottom: 37px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    margin-bottom: 54px;
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    margin: 0 0 56px 0;
+  }
+}
+
 .main__promo {
   margin-bottom: 20px;
 

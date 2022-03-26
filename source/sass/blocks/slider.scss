@@ -1,0 +1,148 @@
+.slider__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+}
+
+.slider__images {
+  margin: 0 auto 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.slider__image--after {
+  display: none;
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__button {
+  position: relative;
+  padding: 10px;
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $main-text-color;
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 10px;
+    bottom: 4px;
+    width: calc(100% - 2 * 10px);
+    height: 1px;
+    background-color: transparent;
+    border-bottom: 1px dotted fade-out($main-text-color, 0.76);
+  }
+
+  &:focus {
+    outline: none;
+
+    &::after {
+      border-bottom: 1px solid $main-text-color;
+    }
+  }
+
+  &:hover {
+    &::after {
+      border-bottom: 1px solid fade-out($main-text-color, 0.76);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.slider__button--current {
+  &::after {
+    display: none;
+  }
+}
+
+.slider__scale {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  min-width: 82px;
+  max-width: 250px;
+  height: 14px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: $contrast-text-color;
+  border: 1px solid $demo-border-color;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 428px;
+    height: 6px;
+    margin: 0;
+    background-color: $demo-border-color;
+    border: none;
+  }
+}
+
+.slider__bar-wrapper {
+  width: calc(100% - 2 * 6px);
+  margin: 0 5px;
+}
+
+.slider__bar {
+  height: 6px;
+  background-color: $main-color;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-color: transparent;
+  }
+}
+
+.slider__toggle {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    background-color: $contrast-text-color;
+    border: 1px solid $demo-border-color;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+    box-shadow: 0 1px 3px 0 fade-out($contrast-text-color, 0.84);
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 50%;
+      width: 8px;
+      height: 8px;
+      background-color: $main-color;
+      border-radius: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+}
