@@ -2,27 +2,84 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
   }
 }
 
 .extra-card__title {
+  margin: 0;
+  margin-bottom: 13px;
   font-family: "Oswald", "Helvetica", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $main-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+  }
 }
 
 .extra-card__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 15px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    flex-grow: 1;
+    margin-left: 0;
+  }
 }
 
 .extra-card__price {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.extra-card__link {
+  box-sizing: border-box;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0;
+    margin-left: 38px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

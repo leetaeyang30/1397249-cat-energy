@@ -1,10 +1,30 @@
 .main-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content max-content max-content;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, max-content);
+    align-self: end;
     background-image: linear-gradient(to top, $accent-bg 0%, $accent-bg 84%, $contrast-text-color 84%, $contrast-text-color 100%);
+  }
+}
+
+.main-card__title {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 78px;
+  margin: 0;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    justify-self:  center;
+    width: 150px;
+    margin-bottom: 21px;
+    text-align: center;
   }
 }
 
@@ -15,19 +35,68 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $main-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+  }
 }
 
 .main-card__image-link {
   display: block;
-  order: -1;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self:  center;
+  justify-self: center;
+  // order: -1;
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    margin-bottom: 34px;
+  }
 }
 
 .main-card__info {
+  margin: 0;
+  margin-bottom: 22px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    margin-bottom: 33px;
+    font-size: 16px;
+  }
+}
+
+.main-card__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid $demo-border-color;
+  }
 }
 
 .main-card__number {
   margin: 0;
+}
+
+.main-card__link {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px;
+    font-size: 16px;
+    grid-row: 4/5;
+  }
 }

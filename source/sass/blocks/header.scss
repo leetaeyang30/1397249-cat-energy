@@ -1,3 +1,18 @@
+.header {
+  position: relative;
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: calc(50% - 50vw);
+      width: 100vw;
+      height: 1px;
+      background-color: $nav-border-color;
+    }
+  }
+}
+
 .header__wrapper {
   position: relative;
   padding-top: 11px;
