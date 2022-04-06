@@ -45,11 +45,11 @@
   }
 }
 
-.radio-field__input:disabled + .radio-field__name{
+.radio-field__input:disabled + .radio-field__name {
   opacity: 0.3;
 }
 
-.radio-field__input:focus-visible + .radio-field__name::before{
+.radio-field__input:focus-visible + .radio-field__name::before {
   border: 1px solid $main-text-color;
 }
 
