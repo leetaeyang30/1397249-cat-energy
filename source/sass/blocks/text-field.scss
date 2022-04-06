@@ -18,8 +18,10 @@
   width: 100%;
   padding: 12px 15px 13px;
   box-sizing: border-box;
+  font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
   outline: $input-border-color solid 1px;
   border: 0;
 
@@ -37,13 +39,13 @@
 
   @media (min-width: $tablet-width) {
     padding: 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &::placeholder {
-    font-family: "Oswald", "Helvetica", sans-serif;
     font-size: 16px;
     line-height: 18px;
-    text-transform: uppercase;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;

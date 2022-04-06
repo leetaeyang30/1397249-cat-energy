@@ -73,6 +73,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 82px;
     margin-bottom: 52px;
   }
 }
@@ -95,7 +96,6 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    margin-top: 82px;
     margin-bottom: 41px;
   }
 }
@@ -135,8 +135,9 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 254px;
     grid-column: 1/2;
     grid-row: 2/3;
+    width: 254px;
+    padding: 17px 10px 17px;
   }
 }

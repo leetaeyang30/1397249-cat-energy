@@ -166,10 +166,6 @@
 .form__label--email,
 .form__label--phone {
   position: relative;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  }
 }
 
 .form__wrapper--contacts {
@@ -182,6 +178,12 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 78px;
     padding: 0;
+  }
+}
+
+.form__wrapper--contacts .text-field {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -222,7 +224,7 @@
 
 .form__wrapper--comment {
   @media (min-width: $tablet-width) {
-  padding: 0 37px 0 41px;
+    padding: 0 37px 0 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -274,6 +276,7 @@
     width: 252px;
     margin-bottom: 0;
     margin-left: 41px;
+    padding: 13px 10px;
   }
 
   @media (min-width: $desktop-width) {
