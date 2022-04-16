@@ -7,7 +7,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, max-content);
     align-self: end;
-    background-image: linear-gradient(to top, $accent-bg 0%, $accent-bg 84%, $contrast-text-color 84%, $contrast-text-color 100%);
+    background-image: linear-gradient(to top, $accent-bg 0%, $accent-bg 430px, $contrast-text-color 430px, $contrast-text-color 100%);
   }
 }
 
