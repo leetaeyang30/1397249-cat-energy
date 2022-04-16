@@ -18,7 +18,7 @@
 
 .demo__title {
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 41px;
   padding: 0;
 
 
@@ -79,7 +79,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   padding: 0;
 
   @media (min-width: $desktop-width) {
@@ -89,8 +89,8 @@
 
 .demo__data-wrapper {
   width: 124px;
-  height: 70px;
-  padding: 15px 17px 0;
+  height: 55px;
+  padding: 13px 17px 0;
   text-align: center;
   border: 1px solid $demo-border-color;
   border-radius: 2px;
@@ -111,7 +111,7 @@
 }
 
 .demo__numbers {
-  margin-bottom: 17px;
+  margin-bottom: 8px;
   font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 24px;
   line-height: 24px;
