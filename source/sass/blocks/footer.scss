@@ -91,7 +91,8 @@
 }
 
 .footer__logo {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
@@ -105,7 +106,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto 22px;
-  padding: 20px 0 21px;
+  padding: 15px 0 13px;
   border-top: 1px solid $footer-border-color;
   border-bottom: 1px solid $footer-border-color;
 
