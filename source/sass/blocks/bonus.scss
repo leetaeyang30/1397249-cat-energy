@@ -3,10 +3,14 @@
   flex-direction: column;
   align-items: center;
   height: 289px;
-  background-image: linear-gradient(to bottom, fade-out($main-color, 0.15) 0%, fade-out($main-color, 0.15) 100%), url("../../img/bonus-bg.jpg");
+  background-image: url("../../img/bonus/gift-mob.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/bonus/gift-mob@2x.png");
+  }
 
   &::before {
     content: "";
@@ -24,9 +28,14 @@
     justify-content: space-around;
     height: 200px;
     background-position: center;
+    background-image: url("../../img/bonus/gift-tab.png");
 
     &::before {
       margin: 0;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bonus/gift-tab@2x.png");
     }
   }
 
@@ -35,6 +44,11 @@
     background-position: center;
     flex-direction: column;
     justify-content: flex-start;
+    background-image: url("../../img/bonus/gift-desk.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bonus/gift-desk@2x.png");
+    }
 
     &::before {
       margin-top: 59px;
