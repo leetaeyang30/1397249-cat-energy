@@ -6,7 +6,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 75px;
   }
 }
 
@@ -52,11 +52,12 @@
     grid-template-areas:
       "c-title c-icon"
       "c-text c-icon"
-      "c-link c-link";
-    padding-top: 70px;
+      "c-link c-icon";
+    padding-top: 73px;
     padding-left: 53px;
     padding-right: 53px;
-    padding-bottom: 53px;
+    padding-bottom: 58px;
+    margin-bottom: 30px;
 
     &::before {
       width: 200px;
@@ -83,6 +84,18 @@
   }
 }
 
+.categories__item--slim::before {
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+    margin-left: 0;
+  }
+}
+
 .categories__item--slim::after {
   width: 36px;
   height: 50px;
@@ -93,13 +106,28 @@
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
-    margin-top: -15px;
-    margin-left: 15px;
+    margin-top: 4px;
+    margin-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 97px;
+    margin-top: 0;
+    margin-left: 15px;
+  }
+}
+
+
+.categories__item--pro::before {
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    margin-left: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 7px;
+    margin-left: 0;
   }
 }
 
@@ -114,14 +142,17 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
-    margin-top: 30px;
-    margin-right: -17px;
-    margin-left: 14px;
+    margin-top: 62px;
+    margin-left: 19px;
+    margin-right: -24px;
   }
 
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 57px;
+    margin-top: 27px;
+    margin-left: -19px;
+    margin-right: 0;
   }
 }
 
@@ -140,11 +171,12 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 39px;
+    margin-bottom: 74px;
+    margin-top: 36px;
   }
 }
 
@@ -152,7 +184,7 @@
   grid-area: c-text;
   position: relative;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 42px;
 
   &::after {
     position: absolute;
@@ -169,15 +201,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 340px;
     font-size: 16px;
     line-height: 24px;
     color: $main-text-color;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 }
 
@@ -214,6 +247,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      margin-left: 24px;
+    }
   }
 }
 

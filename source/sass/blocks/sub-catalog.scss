@@ -54,18 +54,25 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 37px;
+    padding-right: 37px;
     margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
 
     &::before {
       position: absolute;
       content: "";
       transform: translateY(50%);
-      top: 50%;
+      top: 57%;
       right: 0;
       width: 150vw;
       height: 2px;
       z-index: -1;
       background-color: $main-color;
+    }
+
+    &::after {
+      top: 57%;
     }
   }
 
@@ -97,6 +104,6 @@
   @media (min-width: $desktop-width) {
     border-right: none;
     border-left: none;
-    padding: 14px 0 15px 0;
+    padding: 14px 0 17px 0;
   }
 }

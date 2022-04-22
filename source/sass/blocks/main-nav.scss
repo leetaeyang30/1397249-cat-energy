@@ -1,5 +1,13 @@
 .main-nav {
   width: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .main-nav__toggle {
@@ -100,10 +108,22 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-right: 35px;
+    margin-right: 38px;
+
+    &:first-child {
+      margin-right: 33px;
+    }
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 34px;
+
+    &:first-child {
+      margin-right: 36px;
     }
   }
 }
@@ -156,7 +176,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 30px;
+      top: 33px;
       right: 5px;
       left: 0;
       width: 100%;

@@ -1,12 +1,12 @@
 .main__wrapper {
-  padding-top: 27px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
+    padding-top: 62px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    padding-top: 71px;
   }
 }
 
@@ -30,18 +30,27 @@
 }
 
 .main__title--form {
-  margin-bottom: 37px;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .main__title--catalog {
-  margin-bottom: 41px;
+  margin-bottom: 38px;
+  margin-left: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 84px;
+    margin-bottom: 76px;
   }
 }
 
@@ -54,7 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
+    margin-bottom: 32px;
   }
 }
 
@@ -66,7 +75,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 77px;
   }
 }
 
@@ -78,7 +87,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 117px;
+    margin-bottom: 35px;
   }
 }
 
@@ -90,12 +99,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    padding-bottom: 59px;
   }
 }
 
 .main__aside {
-  margin-bottom: 35px;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 77px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
@@ -105,9 +118,13 @@
 }
 
 .main__catalog {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
   }
 }

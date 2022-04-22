@@ -1,6 +1,6 @@
 .checkbox {
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
@@ -38,7 +38,7 @@
   left: 6px;
   width: 18px;
   height: 14px;
-  background-image: url("../../img/tick.svg");
+  background-image: url("../../img/svg/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 

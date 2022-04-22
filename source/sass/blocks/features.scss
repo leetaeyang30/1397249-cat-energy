@@ -18,9 +18,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 137px;
-    row-gap: 77px;
-    padding-bottom: 47px;
+    column-gap: 57px;
+    row-gap: 88px;
+    padding-bottom: 57px;
 
     &::after {
       position: absolute;
@@ -68,15 +68,16 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, min-content);
-    grid-template-rows: repeat(2, min-content);
+    grid-template-rows: min-content 1fr;
     column-gap: 0;
     margin-bottom: 0;
 
     &::before {
-      width: 80px;
-      height: 80px;
       grid-column: 1/2;
       grid-row: 1/2;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 33px;
     }
 
     &::after {
@@ -86,7 +87,7 @@
       counter-increment: myCounter;
       content: counter(myCounter);
       margin-top: -30px;
-      margin-left: 33px;
+      margin-left: 35px;
       font-family: "Oswald", "Helvetica", sans-serif;
       font-style: normal;
       font-weight: 400;

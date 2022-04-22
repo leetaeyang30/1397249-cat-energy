@@ -19,7 +19,7 @@
 
 .catalog__item {
   position: relative;
-  padding: 23px 0 25px;
+  padding: 22px 0 22px;
 
   @media (max-width: $mobile-width-only) {
     &::before {
@@ -35,6 +35,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 8px 37px 39px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 39px 39px;
   }
 }
 
