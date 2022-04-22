@@ -17,16 +17,17 @@
     width: 78px;
     height: 80px;
     margin-top: 59px;
-    margin-bottom: 48px;
-    background-image: url("../img/gift.svg");
+    margin-bottom: 49px;
+    background-image: url("../img/bonus/gift.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 200px;
+    padding: 0 124px 0 79px;
     background-position: center;
     background-image: url("../../img/bonus/gift-tab.png");
 
@@ -41,6 +42,7 @@
 
   @media (min-width: $desktop-width) {
     height: 289px;
+    padding: 0;
     background-position: center;
     flex-direction: column;
     justify-content: flex-start;
@@ -67,6 +69,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    margin-top: 4px;
   }
 
   @media (min-width: $desktop-width) {

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -12,11 +12,15 @@
 .text-field__name {
   display: block;
   margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
 }
 
 .text-field__input {
   width: 100%;
-  padding: 12px 15px 13px;
+  padding: 13px 14px 13px;
   box-sizing: border-box;
   font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 16px;
@@ -56,13 +60,22 @@
 
 .text-field__input--email,
 .text-field__input--phone {
-  padding-top: 15px;
+  padding-top: 13px;
   padding-right: 43px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 8px;
+  }
 }
 
 .text-field__icon {
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 13px;
   transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: 49%;
+    right: 16px;
+  }
 }

@@ -21,10 +21,10 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 61px;
     justify-content: start;
     background: $contrast-text-color;
-    padding: 56px 80px;
+    padding: 57px 80px;
   }
 }
 
@@ -38,23 +38,30 @@
   color: $main-text-color;
 
   @media (min-width: $tablet-width) {
+    max-width: 200px;
     font-size: 20px;
     line-height: 26px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 87px;
+    margin-right: 95px;
   }
 }
 
 .footer__address {
   font-style: normal;
   line-height: 20px;
+  margin-right: 5px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: right;
+    margin-right: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -90,10 +97,16 @@
   }
 }
 
+.footer__wrapper--catalog {
+  @media (min-width: $tablet-width) {
+    padding: 48px 0 55px;
+  }
+}
+
 .footer__logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -106,14 +119,24 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto 22px;
-  padding: 15px 0 13px;
+  padding: 22px 0 20px;
   border-top: 1px solid $footer-border-color;
   border-bottom: 1px solid $footer-border-color;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-bottom: 0;
+    justify-content: space-between;
+    padding: 0 0 0 37px;
+    margin: 0;
     border: none;
+  }
+}
+
+.footer__socials-list--catalog {
+  padding: 16px 0 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 0 14px;
+    margin-left: 27px;
   }
 }
 
@@ -127,13 +150,12 @@
 }
 
 .footer__copyright svg {
+  fill: $social-icons;
   margin-left: 22px;
 }
 
-.footer__copyright:hover {
-  path {
-    fill: $main-color;
-  }
+.footer__copyright:hover svg {
+  fill: $main-color;
 }
 
 .footer__copyright:active {

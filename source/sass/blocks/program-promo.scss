@@ -32,10 +32,10 @@
 
   @media (min-width: $desktop-width) {
     display: initial;
-    top: -80px;
+    top: -87px;
     right: 0;
     left: 50%;
-    height: 694px;
+    height: 665px;
     background-color: $main-color;
     background-image: linear-gradient(to bottom, fade-out($main-color, 0.15) 0%, fade-out($main-color, 0.15) 100%), url("../../img/promo/promo-bg-desk.jpg");
     background-repeat: no-repeat;
@@ -54,16 +54,15 @@
     display: grid;
     grid-template-rows: min-content 1fr;
     place-items: start;
-    padding-top: 64px;
-    padding-right: 10px;
+    padding-top: 61px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-rows: min-content 165px;
+    grid-template-rows: 1fr;
     grid-template-columns: minmax(420px, 1fr);
-    padding-top: 32px;
+    padding-top: 25px;
     padding-left: 80px;
     padding-right: 10px;
     padding-bottom: 100px;
@@ -76,6 +75,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 87px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,6 +104,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 430px;
     text-align: left;
     margin-bottom: 41px;
   }
@@ -120,6 +121,12 @@
     text-align: left;
     font-size: 20px;
     line-height: 20px;
+    margin-left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 430px;
+    margin-left: 0;
   }
 }
 
@@ -137,6 +144,10 @@
     margin-left: 378px;
     z-index: -1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 368px;
+  }
 }
 
 .program-promo__button {
@@ -147,12 +158,16 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 2/3;
-    width: 254px;
+    width: 246px;
     padding: 17px 10px 17px;
-    margin-left: 87px;
+    margin-top: 28px;
+    margin-left: 90px;
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 315px;
     margin-left: 0;
   }
 }

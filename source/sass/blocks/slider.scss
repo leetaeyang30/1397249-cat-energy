@@ -16,7 +16,11 @@
   margin: 0 auto 5px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
