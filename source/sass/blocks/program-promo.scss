@@ -90,7 +90,7 @@
 .program-promo__title {
   margin: 0;
   margin-bottom: 25px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $main-font;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
@@ -112,7 +112,7 @@
 
 .program-promo__slogan {
   margin: 0;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $main-font;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
