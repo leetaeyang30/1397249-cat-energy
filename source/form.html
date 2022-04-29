@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy: Программа</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+html">
   <link rel="apple-touch-icon" href="img/favicons/180.png">
@@ -20,12 +20,14 @@
           <picture>
             <source media="(min-width: 1280px)" srcset="img/svg/header-logo-desk.svg">
             <source media="(min-width: 768px)" srcset="img/svg/header-logo-tab.svg">
-            <img class="logo__image" src="img/svg/header-logo-mob.svg" alt="Бело-рыжий кот на желтом фоне и надпись Cat Energy."
-              width="191" height="38">
-            </picture>
+            <img class="logo__image" src="img/svg/header-logo-mob.svg"
+              alt="Бело-рыжий кот на желтом фоне и надпись Cat Energy." width="191" height="38">
+          </picture>
         </a>
         <nav class="main-nav main-nav--form main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -93,7 +95,7 @@
                 <input class="text-field__input text-field__input--email" type="email" name="mail"
                   placeholder="kuklachev@gmail.com" required>
                 <svg class="text-field__icon" width="19" height="14">
-                  <use xlink:href="img/svg/sprite.svg#mail"></use>
+                  <use xlink:href="img/sprite.svg#mail"></use>
                 </svg>
               </label>
               <label class="form__label text-field form__label--phone">
@@ -101,7 +103,7 @@
                 <input class="text-field__input text-field__input--phone" type="tel" name="phone"
                   placeholder="8 (960) 900-60-90" required>
                 <svg class="text-field__icon" width="20" height="21" fill="none">
-                  <use xlink:href="img/svg/sprite.svg#phone"></use>
+                  <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
               </label>
             </div>
@@ -114,7 +116,7 @@
               <label class="form__label textarea">
                 <span class="visually-hidden">Подробности</span>
                 <textarea class="textarea__input" name="comment"
-                placeholder="Расскажите обо всех повадках кота"></textarea>
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
             </div>
           </fieldset>
@@ -162,9 +164,22 @@
       </div>
     </div>
     <div class="footer__map">
-      <iframe
+      <iframe class="footer__iframe"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1647616084128!5m2!1sru!2sru"
-        width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+      <picture>
+        <source type="image/webp" media="(min-width: 1280px)"
+          srcset="img/footer/map-desk.webp 1x, img/footer/map-desk@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/footer/map-tab.webp 1x, img/footer/map-tab@2x.webp 2x">
+        <source type="image/webp" srcset="img/footer/map-mobile.webp 1x, img/footer/map-mobile@2x.webp 2x">
+
+        <source media="(min-width: 1280px)" srcset="img/footer/map-desk.png 1x, img/footer/map-desk@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/footer/map-tab.png 1x, img/footer/map-tab@2x.png 2x">
+        <img class="footer__backup-map" src="img/footer/map-mobile.png" srcset="img/footer/map-mobile@2x.png 2x"
+          alt="Карта с местонахождением офиса." width="320" height="362">
+      </picture>
     </div>
     <div class="footer__info">
       <div class="container">
@@ -179,7 +194,7 @@
               <a class="socials__link" href="https://vk.com/htmlacademy" target="_blank">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="socials__icon socials__icon--vk" width="23" height="13">
-                  <use xlink:href="img/svg/sprite.svg#vk"></use>
+                  <use xlink:href="img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
@@ -188,7 +203,7 @@
                 target="_blank">
                 <span class="visually-hidden">Инстаграмм</span>
                 <svg class="socials__icon socials__icon--insta" width="16" height="16">
-                  <use xlink:href="img/svg/sprite.svg#insta"></use>
+                  <use xlink:href="img/sprite.svg#insta"></use>
                 </svg>
               </a>
             </li>
@@ -196,7 +211,7 @@
               <a class="socials__link" href="https://www.facebook.com/htmlacademy" target="_blank">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="socials__icon socials__icon--fb" width="10" height="17">
-                  <use xlink:href="img/svg/sprite.svg#fb"></use>
+                  <use xlink:href="img/sprite.svg#fb"></use>
                 </svg>
               </a>
             </li>
@@ -204,14 +219,14 @@
           <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             HTML Academy
             <svg width="27" height="34">
-              <use xlink:href="img/svg/sprite.svg#academy"></use>
+              <use xlink:href="img/sprite.svg#academy"></use>
             </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
-  <script src="js/mobile-menu.js"></script>
+  <script src="js/mobile-menu.min.js"></script>
 </body>
 
 

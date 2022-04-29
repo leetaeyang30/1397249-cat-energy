@@ -14,7 +14,7 @@
   margin: 0;
   margin-top: 58px;
   margin-bottom: 8px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $main-font;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -86,7 +86,7 @@
   display: block;
   width: 100%;
   padding: 10px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
