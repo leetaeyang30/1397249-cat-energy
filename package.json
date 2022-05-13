@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "gulp build",
+    "build": "gulp start",
     "styles": "gulp styles",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",

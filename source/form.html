@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy: Программа</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="fonts/woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="fonts/woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+html">
@@ -16,7 +18,7 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a class="header__logo logo" href="index.html">
+        <a class="header__logo logo" href="index.html" aria-label="Логотип бело-рыжий кот на желтом фоне и надпись Cat Energy.">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/svg/header-logo-desk.svg">
             <source media="(min-width: 768px)" srcset="img/svg/header-logo-tab.svg">
@@ -184,14 +186,14 @@
     <div class="footer__info">
       <div class="container">
         <div class="footer__wrapper footer__wrapper--catalog">
-          <a class="footer__logo logo" href="index.html">
+          <a class="footer__logo logo" href="index.html" aria-label="Буквенный логотив Cat Energy.">
             <img class="logo__text" src="img/svg/footer-logo.svg" alt="Буквенный логотив Cat Energy" width="128"
               height="24">
           </a>
 
           <ul class="footer__socials-list socials footer__socials-list--catalog ">
             <li class="socials__item">
-              <a class="socials__link" href="https://vk.com/htmlacademy" target="_blank">
+              <a class="socials__link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Перейти на нашу страницу в ВК.">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="socials__icon socials__icon--vk" width="23" height="13">
                   <use xlink:href="img/sprite.svg#vk"></use>
@@ -200,7 +202,7 @@
             </li>
             <li class="socials__item">
               <a class="socials__link socials__link--insta" href="https://www.instagram.com/htmlacademy"
-                target="_blank">
+                target="_blank" aria-label="Перейти на наш профиль в Инстаграмм.">
                 <span class="visually-hidden">Инстаграмм</span>
                 <svg class="socials__icon socials__icon--insta" width="16" height="16">
                   <use xlink:href="img/sprite.svg#insta"></use>
@@ -208,7 +210,8 @@
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="https://www.facebook.com/htmlacademy" target="_blank">
+              <a class="socials__link" href="https://www.facebook.com/htmlacademy" target="_blank"
+                aria-label="Перейти на нашу страницу в Фейсбуке.">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="socials__icon socials__icon--fb" width="10" height="17">
                   <use xlink:href="img/sprite.svg#fb"></use>
@@ -216,7 +219,8 @@
               </a>
             </li>
           </ul>
-          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+            aria-label="Перейти на страницу студии-разработчика.">
             HTML Academy
             <svg width="27" height="34">
               <use xlink:href="img/sprite.svg#academy"></use>
