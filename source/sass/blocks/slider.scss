@@ -38,14 +38,14 @@
 .slider__image--before {
   @media (min-width: $tablet-width) {
     grid-area: 1/1/2/2;
-    clip-path: polygon(0 0,50%0,50% 100%,0 100%);
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
   }
 }
 
 .slider__image--after {
   @media (min-width: $tablet-width) {
     grid-area: 1/1/2/2;
-    clip-path: polygon(100%0,50%0,50% 100%,100% 100%);
+    clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
   }
 }
 

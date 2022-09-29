@@ -12,7 +12,7 @@ const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
 const svgstore = require("gulp-svgstore");
-const del = require('del');
+const del = require("del");
 
 // HTML
 
@@ -37,7 +37,7 @@ const styles = () => {
     ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -128,7 +128,7 @@ const copy = (done) => {
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -169,20 +169,18 @@ const build = gulp.series(
 
 exports.build = build;
 
-exports.default = gulp.series(styles, server, watcher);
-
-// exports.default = gulp.series(
-//   clean,
-//   copy,
-//   copyImages,
-//   gulp.parallel(
-//     styles,
-//     html,
-//     scripts,
-//     sprite,
-//     createWebp
-//   ),
-//   gulp.series(
-//     server,
-//     watcher
-// ));
+exports.default = gulp.series(
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    sprite,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+));
