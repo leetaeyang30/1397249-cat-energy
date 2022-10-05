@@ -14,10 +14,10 @@
   position: absolute;
   content: "";
   display: block;
-  top: 24px;
+  top: 17px;
   right: 0;
-  width: 24px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
   z-index: 2;
   padding: 0;
   background-color: transparent;
@@ -32,13 +32,37 @@
 .main-nav__toggle--closed::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 8px;
+  left: 8px;
   width: 24px;
   height: 2px;
   background-color: $main-text-color;
   box-shadow: 0 8px 0 0 $main-text-color, 0 16px 0 0 $main-text-color;
 }
+
+.main-nav__toggle {
+  &:focus {
+    &::before,
+    &::after {
+      opacity: 0.8;
+    }
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
 
 .main-nav__toggle--closed:active::before {
   background-color: fade($main-text-color, 30%);
@@ -48,14 +72,14 @@
 }
 
 .main-nav__toggle--opened {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 
   &::before,
   &::after {
     position: absolute;
     content: "";
-    top: 8px;
+    top: 15px;
     width: 25px;
     height: 2px;
     background-color: $main-text-color;
@@ -64,19 +88,25 @@
   &::before {
     transform: rotate(45deg);
     box-shadow: none;
-    left: -2px;
+    left: 8px;
   }
 
   &::after {
     transform: rotate(-45deg);
-    right: -2px;
+    right: 7px;
   }
 }
 
 .main-nav__list {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  min-height: 65px;
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: $contrast-text-color;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -169,9 +199,12 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav__link--current {
+.main-nav__link--current {
+    opacity: 0.5;
+
+    @media (min-width: $tablet-width) {
     position: relative;
+    opacity: 1;
 
     &::after {
       content: "";
@@ -199,15 +232,11 @@
     display: none;
   }
 
-  .main-nav--opened .main-nav__list {
-    display: block;
-  }
-
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 
   .main-nav--nojs .main-nav__list {
-    display: block;
+    position: static;
   }
 }

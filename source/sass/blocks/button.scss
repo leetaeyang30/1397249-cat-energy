@@ -22,6 +22,7 @@
 
   &:active {
     color: $contrast-text-color-30;
+    background-color: $main-color-hover;
   }
 
   @media (min-width: $tablet-width) {

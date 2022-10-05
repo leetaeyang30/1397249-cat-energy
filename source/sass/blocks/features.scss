@@ -1,7 +1,3 @@
-.features {
-  overflow-x: hidden;
-}
-
 .features__title {
   margin: 0;
   margin-bottom: 42px;
@@ -106,19 +102,19 @@
 }
 
 .features__item--leaf::before {
-  background-image: url("../../img/svg/leaf.svg");
+  background-image: url("../img/svg/leaf.svg");
 }
 
 .features__item--glass::before {
-  background-image: url("../../img/svg/glass.svg");
+  background-image: url("../img/svg/glass.svg");
 }
 
 .features__item--utensil::before {
-  background-image: url("../../img/svg/utensil.svg");
+  background-image: url("../img/svg/utensil.svg");
 }
 
 .features__item--clock::before {
-  background-image: url("../../img/svg/clock.svg");
+  background-image: url("../img/svg/clock.svg");
 }
 
 .features__text {

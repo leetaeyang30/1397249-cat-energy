@@ -3,13 +3,14 @@
   flex-direction: column;
   align-items: center;
   height: 289px;
-  background-image: url("../../img/bonus/gift-mob.png");
+  background-image: url("../img/bonus/gift-mob.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: $main-color;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/bonus/gift-mob@2x.png");
+    background-image: url("../img/bonus/gift-mob@2x.png");
   }
 
   &::before {
@@ -29,14 +30,14 @@
     height: 200px;
     padding: 0 124px 0 79px;
     background-position: center;
-    background-image: url("../../img/bonus/gift-tab.png");
+    background-image: url("../img/bonus/gift-tab.png");
 
     &::before {
       margin: 0;
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/bonus/gift-tab@2x.png");
+      background-image: url("../img/bonus/gift-tab@2x.png");
     }
   }
 
@@ -46,10 +47,10 @@
     background-position: center;
     flex-direction: column;
     justify-content: flex-start;
-    background-image: url("../../img/bonus/gift-desk.png");
+    background-image: url("../img/bonus/gift-desk.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/bonus/gift-desk@2x.png");
+      background-image: url("../img/bonus/gift-desk@2x.png");
     }
 
     &::before {
