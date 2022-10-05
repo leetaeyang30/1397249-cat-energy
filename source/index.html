@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy: Главная</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="fonts/woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="fonts/woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico" sizes="16x16 32x32">
   <link rel="icon" href="img/favicons/favicon.svg" sizes="any" type="image/svg+html">
@@ -16,7 +18,7 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a class="header__logo logo">
+        <a class="header__logo logo" aria-label="Логотип бело-рыжий кот на желтом фоне и надпись Cat Energy.">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/svg/header-logo-desk.svg">
             <source media="(min-width: 768px)" srcset="img/svg/header-logo-tab.svg">
@@ -25,7 +27,7 @@
           </picture>
         </a>
         <button class="main-nav__toggle main-nav__toggle--closed" type="button">
-          <span class="visually-hidden">Открыть меню</span>\
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <nav class="main-nav main-nav--closed main-nav--nojs main-nav--main">
           <ul class="main-nav__list">
@@ -82,7 +84,7 @@
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="categories__link" href="catalog.html">Каталог Slim</a>
+          <a class="categories__link" href="catalog.html" aria-label="Перейти к каталогу товаров для похудения">Каталог Slim</a>
         </li>
         <li class="categories__item categories__item--pro">
           <h3 class="categories__title">Набор массы</h3>
@@ -90,7 +92,7 @@
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a class="categories__link" href="catalog.html">Каталог Pro</a>
+          <a class="categories__link" href="catalog.html" aria-label="Перейти к каталогу товаров для набора массы">Каталог Pro</a>
         </li>
       </ul>
     </section>
@@ -147,26 +149,30 @@
         <div class="slider">
           <div class="slider__wrapper">
             <div class="slider__images">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/slider/before-desk.webp 1x, img/slider/before-desk@2x.webp 2x">
-                <source type="image/webp" srcset="img/slider/before-mob.webp 1x, img/slider/before-mob@2x.webp 2x">
+              <div class="slider__image slider__image--before">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/slider/before-desk.webp 1x, img/slider/before-desk@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slider/before-mob.webp 1x, img/slider/before-mob@2x.webp 2x">
 
-                <source media="(min-width: 768px)"
-                  srcset="img/slider/before-desk.png 1x, img/slider/before-desk@2x.png 2x">
-                <img class="slider__image slider__image--before" src="img/slider/before-mob.png"
-                  srcset="img/slider/before-mob@2x.png 2x" alt="Толстый кот." width="311" height="232">
-              </picture>
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/slider/after-desk.webp 1x, img/slider/after-desk@2x.webp 2x">
-                <source type="image/webp" srcset="img/slider/after-mob.webp 1x, img/slider/after-mob@2x.webp 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/slider/before-desk.png 1x, img/slider/before-desk@2x.png 2x">
+                  <img src="img/slider/before-mob.png"
+                    srcset="img/slider/before-mob@2x.png 2x" alt="Толстый кот." width="311" height="232">
+                </picture>
+              </div>
+              <div class="slider__image slider__image--after slider__image--hidden">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/slider/after-desk.webp 1x, img/slider/after-desk@2x.webp 2x">
+                  <source type="image/webp" srcset="img/slider/after-mob.webp 1x, img/slider/after-mob@2x.webp 2x">
 
-                <source media="(min-width: 768px)"
-                  srcset="img/slider/after-desk.png 1x, img/slider/after-desk@2x.png 2x">
-                <img class="slider__image slider__image--after" src="img/slider/after-mob.png"
-                  srcset="img/slider/after-mob@2x.png 2x" alt="Тощий кот." width="251" height="224">
-              </picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/slider/after-desk.png 1x, img/slider/after-desk@2x.png 2x">
+                  <img src="img/slider/after-mob.png"
+                    srcset="img/slider/after-mob@2x.png 2x" alt="Тощий кот." width="251" height="224">
+                </picture>
+              </div>
             </div>
             <div class="slider__controls">
               <button class="slider__button slider__button--before" type="button" aria-label="Посмотреть на кота до диеты">Было</button>
@@ -217,14 +223,14 @@
     <div class="footer__info">
       <div class="container">
         <div class="footer__wrapper">
-          <a class="footer__logo logo">
+          <a class="footer__logo logo" aria-label="Буквенный логотив Cat Energy.">
             <img class="logo__text" src="img/svg/footer-logo.svg" alt="Буквенный логотив Cat Energy" width="128"
               height="24">
           </a>
 
           <ul class="footer__socials-list socials">
             <li class="socials__item">
-              <a class="socials__link" href="https://vk.com/htmlacademy" target="_blank">
+              <a class="socials__link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Перейти на нашу страницу в ВК.">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="socials__icon socials__icon--vk" width="23" height="13">
                   <use xlink:href="img/sprite.svg#vk"></use>
@@ -233,7 +239,7 @@
             </li>
             <li class="socials__item">
               <a class="socials__link socials__link--insta" href="https://www.instagram.com/htmlacademy"
-                target="_blank">
+                target="_blank" aria-label="Перейти на наш профиль в Инстаграмм.">
                 <span class="visually-hidden">Инстаграмм</span>
                 <svg class="socials__icon socials__icon--insta" width="16" height="16">
                   <use xlink:href="img/sprite.svg#insta"></use>
@@ -241,7 +247,7 @@
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="https://www.facebook.com/htmlacademy" target="_blank">
+              <a class="socials__link" href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Перейти на нашу страницу в Фейсбуке.">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="socials__icon socials__icon--fb" width="10" height="17">
                   <use xlink:href="img/sprite.svg#fb"></use>
@@ -249,7 +255,7 @@
               </a>
             </li>
           </ul>
-          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу студии-разработчика.">
             HTML Academy
             <svg width="27" height="34">
               <use xlink:href="img/sprite.svg#academy"></use>
@@ -260,6 +266,7 @@
     </div>
   </footer>
   <script src="js/mobile-menu.min.js"></script>
+  <script src="js/slider.min.js"></script>
 </body>
 
 </html>

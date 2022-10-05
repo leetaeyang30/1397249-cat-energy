@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy: Каталог продукции</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="fonts/woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="fonts/woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+html">
@@ -16,7 +18,8 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a class="header__logo logo" href="index.html">
+        <a class="header__logo logo" href="index.html"
+          aria-label="Логотип бело-рыжий кот на желтом фоне и надпись Cat Energy.">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/svg/header-logo-desk.svg">
             <source media="(min-width: 768px)" srcset="img/svg/header-logo-tab.svg">
@@ -52,11 +55,12 @@
         <ul class="catalog__list">
           <li class="catalog__item main-card">
             <h3 class="main-card__title">
-              <a class="main-card__title-link" href="#!">Cat Energy Pro 500 г
+              <a class="main-card__title-link" href="#!" aria-label="Перейти на страницу товара">Cat Energy Pro 500 г
                 <span class="visually-hidden">(Курица)</span>
               </a>
             </h3>
-            <a class="main-card__image-link main-card__image-link--small" href="#!">
+            <a class="main-card__image-link main-card__image-link--small" href="#!"
+              aria-label="Перейти на страницу товара">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog/chicken-s-desk.webp 1x, img/catalog/chicken-s-desk@2x.webp 2x">
@@ -87,11 +91,11 @@
           </li>
           <li class="catalog__item main-card">
             <h3 class="main-card__title">
-              <a class="main-card__title-link" href="#!">Cat Energy Pro 1000 г
+              <a class="main-card__title-link" href="#!" aria-label="Перейти на страницу товара">Cat Energy Pro 1000 г
                 <span class="visually-hidden">(Курица)</span>
               </a>
             </h3>
-            <a class="main-card__image-link" href="#!">
+            <a class="main-card__image-link" href="#!" aria-label="Перейти на страницу товара">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog/chicken-b-desk.webp 1x, img/catalog/chicken-b-desk@2x.webp 2x">
@@ -122,15 +126,16 @@
           </li>
           <li class="catalog__item main-card">
             <h3 class="main-card__title">
-              <a class="main-card__title-link" href="#!">Cat Energy Pro 500 г <span
-                  class="visually-hidden">(Рыба)</span></a>
+              <a class="main-card__title-link" href="#!" aria-label="Перейти на страницу товара">
+                Cat Energy Pro 500 г
+                <span class="visually-hidden">(Рыба)</span></a>
             </h3>
-            <a class="main-card__image-link main-card__image-link--small" href="#!">
+            <a class="main-card__image-link main-card__image-link--small" href="#!"
+              aria-label="Перейти на страницу товара">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog/fish-s-desk.webp 1x, img/catalog/fish-s-desk@2x.webp 2x">
-                <source type="image/webp"
-                srcset="img/catalog/fish-s-mob.webp 1x, img/catalog/fish-s-mob@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/fish-s-mob.webp 1x, img/catalog/fish-s-mob@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog/fish-s-desk.png 1x, img/catalog/fish-s-desk@2x.png 2x">
                 <img class="main-card__image" src="img/catalog/fish-s-mob.png" srcset="img/catalog/fish-s-mob@2x.png 2x"
@@ -155,15 +160,15 @@
           </li>
           <li class="catalog__item main-card">
             <h3 class="main-card__title">
-              <a class="main-card__title-link" href="#!">Cat Energy Pro 1000 г <span
-                  class="visually-hidden">(Рыба)</span></a>
+              <a class="main-card__title-link" href="#!" aria-label="Перейти на страницу товара">
+                Cat Energy Pro 1000 г
+                <span class="visually-hidden">(Рыба)</span></a>
             </h3>
             <a class="main-card__image-link" href="#!">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog/fish-b-desk.webp 1x, img/catalog/fish-b-desk@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/catalog/fish-b-mob.webp 1x, img/catalog/fish-b-mob@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/fish-b-mob.webp 1x, img/catalog/fish-b-mob@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog/fish-b-desk.png 1x, img/catalog/fish-b-desk@2x.png 2x">
                 <img class="main-card__image" src="img/catalog/fish-b-mob.png" srcset="img/catalog/fish-b-mob@2x.png 2x"
@@ -188,10 +193,12 @@
           </li>
           <li class="catalog__item main-card">
             <h3 class="main-card__title">
-              <a class="main-card__title-link" href="#!">Cat Energy Slim 500 г <span
-                  class="visually-hidden">(Гречка)</span></a>
+              <a class="main-card__title-link" href="#!" aria-label="Перейти на страницу товара">
+                Cat Energy Slim 500 г
+                <span class="visually-hidden">(Гречка)</span>
+              </a>
             </h3>
-            <a class="main-card__image-link" href="#!">
+            <a class="main-card__image-link" href="#!" aria-label="Перейти на страницу товара">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog/buckweat-s-desk.webp 1x, img/catalog/buckweat-s-desk@2x.webp 2x">
@@ -222,8 +229,10 @@
           </li>
           <li class="catalog__item main-card">
             <h3 class="main-card__title">
-              <a class="main-card__title-link" href="#!">Cat Energy Slim 1000 г <span
-                  class="visually-hidden">(Гречка)</span></a>
+              <a class="main-card__title-link" href="#!">
+                Cat Energy Slim 1000 г
+                <span class="visually-hidden">(Гречка)</span>
+              </a>
             </h3>
             <a class="main-card__image-link" href="#!">
               <picture>
@@ -256,15 +265,16 @@
           </li>
           <li class="catalog__item main-card">
             <h3 class="main-card__title">
-              <a class="main-card__title-link" href="#!">Cat Energy Slim 500 г <span
-                  class="visually-hidden">(Рис)</span></a>
+              <a class="main-card__title-link" href="#!" aria-label="Перейти на страницу товара">
+                Cat Energy Slim 500 г
+                <span class="visually-hidden">(Рис)</span>
+                </a>
             </h3>
-            <a class="main-card__image-link main-card__image-link--small" href="#!">
+            <a class="main-card__image-link main-card__image-link--small" href="#!" aria-label="Перейти на страницу товара">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog/rice-s-desk.webp 1x, img/catalog/rice-s-desk@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/catalog/rice-s-mob.webp 1x, img/catalog/rice-s-mob@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/rice-s-mob.webp 1x, img/catalog/rice-s-mob@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog/rice-s-desk.png 1x, img/catalog/rice-s-desk@2x.png 2x">
                 <img class="main-card__image" src="img/catalog/rice-s-mob.png" srcset="img/catalog/rice-s-mob@2x.png 2x"
@@ -294,7 +304,7 @@
             <p class="more-card__text">
               На самом деле вкусов гораздо больше!
             </p>
-            <a class="more-card__link" href="#!">Показать все</a>
+            <a class="more-card__link" href="#!" aria-label="Перейти к каталогу">Показать все</a>
           </li>
         </ul>
       </section>
@@ -366,26 +376,29 @@
         width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
       </iframe>
       <picture>
-        <source type="image/webp" media="(min-width: 1280px)" srcset="img/footer/map-desk.webp 1x, img/footer/map-desk@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/footer/map-tab.webp 1x, img/footer/map-tab@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 1280px)"
+          srcset="img/footer/map-desk.webp 1x, img/footer/map-desk@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/footer/map-tab.webp 1x, img/footer/map-tab@2x.webp 2x">
         <source type="image/webp" srcset="img/footer/map-mobile.webp 1x, img/footer/map-mobile@2x.webp 2x">
 
         <source media="(min-width: 1280px)" srcset="img/footer/map-desk.png 1x, img/footer/map-desk@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/footer/map-tab.png 1x, img/footer/map-tab@2x.png 2x">
-        <img class="footer__backup-map" src="img/footer/map-mobile.png" srcset="img/footer/map-mobile@2x.png 2x" alt="Карта с местонахождением офиса." width="320" height="362">
+        <img class="footer__backup-map" src="img/footer/map-mobile.png" srcset="img/footer/map-mobile@2x.png 2x"
+          alt="Карта с местонахождением офиса." width="320" height="362">
       </picture>
     </div>
     <div class="footer__info">
       <div class="container">
         <div class="footer__wrapper footer__wrapper--catalog">
-          <a class="footer__logo logo" href="index.html">
+          <a class="footer__logo logo" href="index.html" aria-label="Буквенный логотив Cat Energy.">
             <img class="logo__text" src="img/svg/footer-logo.svg" alt="Буквенный логотив Cat Energy" width="128"
               height="24">
           </a>
 
           <ul class="footer__socials-list socials footer__socials-list--catalog ">
             <li class="socials__item">
-              <a class="socials__link" href="https://vk.com/htmlacademy" target="_blank">
+              <a class="socials__link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Перейти на нашу страницу в ВК.">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="socials__icon socials__icon--vk" width="23" height="13">
                   <use xlink:href="img/sprite.svg#vk"></use>
@@ -394,7 +407,7 @@
             </li>
             <li class="socials__item">
               <a class="socials__link socials__link--insta" href="https://www.instagram.com/htmlacademy"
-                target="_blank">
+                target="_blank" aria-label="Перейти на наш профиль в Инстаграмм.">
                 <span class="visually-hidden">Инстаграмм</span>
                 <svg class="socials__icon socials__icon--insta" width="16" height="16">
                   <use xlink:href="img/sprite.svg#insta"></use>
@@ -402,7 +415,7 @@
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="https://www.facebook.com/htmlacademy" target="_blank">
+              <a class="socials__link" href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Перейти на нашу страницу в Фейсбуке.">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="socials__icon socials__icon--fb" width="10" height="17">
                   <use xlink:href="img/sprite.svg#fb"></use>
@@ -410,7 +423,7 @@
               </a>
             </li>
           </ul>
-          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу студии-разработчика.">
             HTML Academy
             <svg width="27" height="34">
               <use xlink:href="img/sprite.svg#academy"></use>

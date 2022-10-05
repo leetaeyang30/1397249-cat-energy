@@ -12,7 +12,7 @@ const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
 const svgstore = require("gulp-svgstore");
-const del = require('del');
+const del = require("del");
 
 // HTML
 
