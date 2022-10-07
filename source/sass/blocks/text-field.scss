@@ -29,16 +29,12 @@
   outline: $input-border-color solid 1px;
   border: 0;
 
-  &:focus-within {
-    outline: $main-text-color solid 1px;
-  }
-
   &:hover {
     outline: $demo-border-color solid 1px;
   }
 
-  &:invalid:focus-within {
-    outline: $error-color solid 1px;
+  &:focus-within {
+    outline: $main-text-color solid 1px;
   }
 
   @media (min-width: $tablet-width) {
@@ -58,6 +54,10 @@
   }
 }
 
+.text-field--error .text-field__input {
+  outline: $error-color solid 1px;
+}
+
 .text-field__input--email,
 .text-field__input--phone {
   padding-top: 13px;
@@ -65,6 +65,10 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 12px;
   }
 }
 
@@ -79,3 +83,4 @@
     right: 16px;
   }
 }
+

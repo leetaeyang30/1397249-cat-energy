@@ -224,10 +224,6 @@
   text-transform: uppercase;
   color: $main-text-color;
 
-  &:focus {
-    outline: none;
-  }
-
   &:active {
     opacity: 0.3;
   }

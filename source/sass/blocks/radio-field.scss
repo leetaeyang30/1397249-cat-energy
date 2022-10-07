@@ -49,10 +49,15 @@
   opacity: 0.3;
 }
 
+.radio-field__input:hover + .radio-field__name::before {
+  border: 1px solid $input-hover-color;
+}
+
+.radio-field__input:disabled:hover + .radio-field__name::before {
+  border: 1px solid $demo-border-color;
+}
+
 .radio-field__input:focus-visible + .radio-field__name::before {
   border: 1px solid $main-text-color;
 }
 
-.radio-field__input:hover + .radio-field__name::before {
-  border: 1px solid $input-hover-color;
-}

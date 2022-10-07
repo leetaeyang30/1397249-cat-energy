@@ -48,6 +48,14 @@
   @media (min-width: $desktop-width) {
     line-height: 21px;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .main-card__image-link--small {
@@ -69,6 +77,14 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 41px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }
 

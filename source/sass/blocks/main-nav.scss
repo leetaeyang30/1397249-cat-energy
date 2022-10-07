@@ -15,7 +15,7 @@
   content: "";
   display: block;
   top: 17px;
-  right: 0;
+  right: 20px;
   width: 40px;
   height: 40px;
   z-index: 2;
@@ -44,7 +44,7 @@
   &:focus {
     &::before,
     &::after {
-      opacity: 0.8;
+      outline: $main-text-color solid 1px;
     }
   }
 
@@ -98,19 +98,23 @@
 }
 
 .main-nav__list {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  min-height: 65px;
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: $contrast-text-color;
-  z-index: 3;
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    background-color: $contrast-text-color;
+    z-index: 3;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: flex-end;
   }
 
@@ -138,22 +142,22 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-right: 38px;
+    margin-left: 38px;
 
     &:first-child {
-      margin-right: 33px;
+      margin-left: 0;
     }
 
     &:last-child {
-      margin-right: 0;
+      margin-left: 33px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 34px;
+    margin-left: 34px;
 
     &:first-child {
-      margin-right: 36px;
+      margin-left: 0;
     }
   }
 }
@@ -179,11 +183,6 @@
 }
 
 .main-nav__link[href] {
-  &:focus {
-    outline: none;
-    opacity: 0.6;
-  }
-
   &:hover {
     opacity: 0.6;
   }
@@ -196,6 +195,10 @@
 .main-nav--main .main-nav__link {
   @media (min-width: $desktop-width) {
     color: $contrast-text-color;
+
+    &:focus {
+      outline: $contrast-text-color solid 1px;
+    }
   }
 }
 

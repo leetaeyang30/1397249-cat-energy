@@ -33,9 +33,9 @@
     transform: translateY(50%);
     top: 50%;
     left: 0;
+    z-index: -1;
     width: 150vw;
     height: 2px;
-    z-index: -1;
     background-color: $main-color;
   }
 
@@ -265,8 +265,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding: 0 37px 0 41px;
     column-gap: 55px;
+    padding: 0 37px 0 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -283,8 +283,8 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    margin-left: 41px;
     flex-direction: row;
+    margin-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
