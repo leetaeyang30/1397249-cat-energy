@@ -149,6 +149,38 @@
         <div class="slider">
           <div class="slider__wrapper">
             <div class="slider__images">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/slider/before-desk.webp 1x, img/slider/before-desk@2x.webp 2x">
+                <source type="image/webp" srcset="img/slider/before-mob.webp 1x, img/slider/before-mob@2x.webp 2x">
+
+                <source media="(min-width: 768px)"
+                  srcset="img/slider/before-desk.png 1x, img/slider/before-desk@2x.png 2x">
+                <img class="slider__image slider__image--before" src="img/slider/before-mob.png"
+                  srcset="img/slider/before-mob@2x.png 2x" alt="Толстый кот." width="311" height="232">
+              </picture>
+
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/slider/after-desk.webp 1x, img/slider/after-desk@2x.webp 2x">
+                <source type="image/webp" srcset="img/slider/after-mob.webp 1x, img/slider/after-mob@2x.webp 2x">
+
+                <source media="(min-width: 768px)"
+                  srcset="img/slider/after-desk.png 1x, img/slider/after-desk@2x.png 2x">
+                <img class="slider__image slider__image--after" id="after" src="img/slider/after-mob.png"
+                  srcset="img/slider/after-mob@2x.png 2x" alt="Тощий кот." width="251" height="224">
+              </picture>
+            </div>
+            <div class="slider__controls">
+              <button class="slider__button slider__button--before" type="button">Было</button>
+              <input class="slider__range" type="range" min="0" max="100" value="0" autocomplete="off">
+              <button class="slider__button slider__button--after" type="button">Стало</button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__images">
               <div class="slider__image slider__image--before">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
@@ -186,7 +218,7 @@
               <button class="slider__button slider__button--after" type="button">Стало</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
   </main>
@@ -230,7 +262,8 @@
 
           <ul class="footer__socials-list socials">
             <li class="socials__item">
-              <a class="socials__link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Перейти на нашу страницу в ВК.">
+              <a class="socials__link" href="https://vk.com/htmlacademy" target="_blank"
+                aria-label="Перейти на нашу страницу в ВК.">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="socials__icon socials__icon--vk" width="23" height="13">
                   <use xlink:href="img/sprite.svg#vk"></use>
@@ -238,8 +271,8 @@
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--insta" href="https://www.instagram.com/htmlacademy"
-                target="_blank" aria-label="Перейти на наш профиль в Инстаграмм.">
+              <a class="socials__link socials__link--insta" href="https://www.instagram.com/htmlacademy" target="_blank"
+                aria-label="Перейти на наш профиль в Инстаграмм.">
                 <span class="visually-hidden">Инстаграмм</span>
                 <svg class="socials__icon socials__icon--insta" width="16" height="16">
                   <use xlink:href="img/sprite.svg#insta"></use>
@@ -247,7 +280,8 @@
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Перейти на нашу страницу в Фейсбуке.">
+              <a class="socials__link" href="https://www.facebook.com/htmlacademy" target="_blank"
+                aria-label="Перейти на нашу страницу в Фейсбуке.">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="socials__icon socials__icon--fb" width="10" height="17">
                   <use xlink:href="img/sprite.svg#fb"></use>
@@ -255,7 +289,8 @@
               </a>
             </li>
           </ul>
-          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу студии-разработчика.">
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+            aria-label="Перейти на страницу студии-разработчика.">
             HTML Academy
             <svg width="27" height="34">
               <use xlink:href="img/sprite.svg#academy"></use>
