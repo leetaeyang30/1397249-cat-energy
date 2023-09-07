@@ -18,7 +18,7 @@ const del = require("del");
 
 const html = () => {
   return gulp.src("source/*.html")
-    // .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -47,10 +47,10 @@ exports.styles = styles;
 
 const scripts = () => {
   return gulp.src("source/js/*.js")
-  .pipe(terser())
-  .pipe(rename({ suffix: ".min" }))
-  .pipe(gulp.dest("build/js"))
-  .pipe(sync.stream());
+    .pipe(terser())
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
 }
 
 exports.scripts = scripts;
@@ -59,12 +59,12 @@ exports.scripts = scripts;
 
 const imageOptimize = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(imagemin([
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.mozjpeg({progressive: true}),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("build/img"))
+    .pipe(imagemin([
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.mozjpeg({ progressive: true }),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.images = imageOptimize;
@@ -81,8 +81,8 @@ exports.images = copyImages;
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-  .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("build/img"))
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.createWebp = createWebp;
@@ -91,11 +91,11 @@ exports.createWebp = createWebp;
 
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.sprite = sprite;
@@ -184,4 +184,4 @@ exports.default = gulp.series(
   gulp.series(
     server,
     watcher
-));
+  ));
